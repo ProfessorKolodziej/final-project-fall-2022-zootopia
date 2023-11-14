@@ -9,9 +9,36 @@ body {
 	background-color: #43D6DD;
 }
 
-:root {
-	--color-primary: blue;
-	--color-secondary: #c00;
+.home-title {
+	color: black;
+	text-align: center;
+	font-family: "Lilita One";
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+}
+
+.select-avatar p {
+	color: var(--default-black, #000);
+	text-align: center;
+	font-family: Jomhuria;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 50px;
+}
+
+.ready-botton {
+	padding: 10px 20px;
+	background-color: #FFD700;
+	border: none;
+	position: relative;
+}
+
+.ready-button::before {
+	content: '';
+	position: absolute;
 }
 
 /*
