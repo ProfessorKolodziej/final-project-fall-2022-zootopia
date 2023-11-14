@@ -19,6 +19,11 @@ body {
 	line-height: normal;
 }
 
+.content-container .map {
+	width: 100%;
+}
+
+
 .select-avatar p {
 	color: var(--default-black, #000);
 	text-align: center;
