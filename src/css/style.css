@@ -29,14 +29,34 @@ body {
 	line-height: 50px;
 }
 
+.avatar-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
 .ready-botton {
 	padding: 10px 20px;
 	background-color: #FFD700;
+	border-radius: 15px;
 	border: none;
 	position: relative;
 }
 
 .ready-button::before {
+	content: '';
+	position: absolute;
+}
+
+.hi-button {
+	padding: 10px 20px;
+	background-color: #FFD700;
+	border: none;
+	position: relative;
+	border-radius: 15px;
+}
+
+.hi-button::before {
 	content: '';
 	position: absolute;
 }
