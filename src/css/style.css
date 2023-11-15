@@ -19,8 +19,102 @@ body {
 	line-height: normal;
 }
 
-.content-container .map {
+.map-container {
+	position: relative;
+	width: fit-content;
+	height: fit-content;
+}
+
+.map {
 	width: 100%;
+	display: block;
+}
+
+.lil-bear {
+	position: absolute;
+	top: 65px;
+	left: 35px;
+	display: block;
+}
+
+.lil-crocodile {
+	position: absolute;
+	top: 150px;
+	left: 90px;
+	display: block;
+}
+
+.lil-elephant {
+	position: absolute;
+	top: 80px;
+	left: 130px;
+	display: block;
+}
+
+.lil-giraffe {
+	position: absolute;
+	top: 135px;
+	left: 165px;
+	display: block;
+}
+
+.lil-panda {
+	position: absolute;
+	top: 65px;
+	left: 245px;
+	display: block;
+}
+
+.lil-kangaroo {
+	position: absolute;
+	top: 130px;
+	left: 290px;
+	display: block;
+}
+
+.NA {
+	position: absolute;
+	font-size: 12px;
+	top: 55px;
+	left: 40px;
+	white-space: nowrap;
+	display: block;
+}
+
+.SA {
+	position: absolute;
+	font-size: 12px;
+	top: 135px;
+	left: 75px;
+	display: block;
+}
+
+.A {
+	position: absolute;
+	font-size: 12px;
+	top: 120px;
+	left: 170px;
+	display: block;
+}
+
+.E {
+	position: absolute;
+	font-size: 14px;
+	top: 50px;
+	left: 210px;
+	display: block;
+}
+
+.O {
+	position: absolute;
+	font-size: 12px;
+	top: 155px;
+	left: 285px;
+	display: block;
+}
+
+.click-prompt {
+	text-align: center;
 }
 
 
