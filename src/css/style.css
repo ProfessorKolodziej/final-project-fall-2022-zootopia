@@ -12,7 +12,6 @@ body {
 .home-title {
 	color: black;
 	text-align: center;
-	font-family: "Lilita One";
 	font-size: 36px;
 	font-style: normal;
 	font-weight: 800;
@@ -72,7 +71,7 @@ body {
 	display: block;
 }
 
-.NA {
+.namerica {
 	position: absolute;
 	font-size: 12px;
 	top: 55px;
@@ -81,7 +80,7 @@ body {
 	display: block;
 }
 
-.SA {
+.samerica {
 	position: absolute;
 	font-size: 12px;
 	top: 135px;
@@ -89,7 +88,7 @@ body {
 	display: block;
 }
 
-.A {
+.africa {
 	position: absolute;
 	font-size: 12px;
 	top: 120px;
@@ -97,7 +96,7 @@ body {
 	display: block;
 }
 
-.E {
+.euroasia {
 	position: absolute;
 	font-size: 14px;
 	top: 50px;
@@ -105,7 +104,7 @@ body {
 	display: block;
 }
 
-.O {
+.oceania {
 	position: absolute;
 	font-size: 12px;
 	top: 155px;
@@ -121,7 +120,6 @@ body {
 .select-avatar p {
 	color: var(--default-black, #000);
 	text-align: center;
-	font-family: Jomhuria;
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 800;
