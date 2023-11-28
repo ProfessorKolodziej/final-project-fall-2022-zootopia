@@ -9,6 +9,7 @@ body {
 	background-color: #43D6DD;
 }
 
+/* landing page */
 .home-title {
 	color: black;
 	text-align: center;
@@ -116,6 +117,7 @@ body {
 	text-align: center;
 }
 
+/* avatar page */
 
 .select-avatar p {
 	color: var(--default-black, #000);
@@ -145,18 +147,47 @@ body {
 	position: absolute;
 }
 
-.hi-button {
-	padding: 10px 20px;
+/* name card page */
+
+.name-card-container {
+	background-color: white;
+	border-radius: 15px;
+	height: 180px;
+	width: 90%;
+	margin-left: 20px;
+	margin-top: 100px;
+}
+
+.name {
+	margin: 20px;
+	padding-top: 20px;
+}
+
+.facts {
+	line-height: 25px;
+}
+
+.giraffe-img {
+	width: 80%;
+	padding-left: 80px;
+	margin-top: -125px;
+}
+
+.sayHiButton {
+	padding: 15px 25px;
+	margin-top: 20px;
+	margin-left: 20px;
 	background-color: #FFD700;
 	border: none;
 	position: relative;
 	border-radius: 15px;
 }
 
-.hi-button::before {
+.sayHiButton::before {
 	content: '';
 	position: absolute;
 }
+
 
 /*
 CSS doesn't allow variables to be used in media
