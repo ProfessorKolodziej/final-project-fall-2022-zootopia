@@ -2,6 +2,38 @@
 // - Run npm run test regularly to check autograding
 // - You'll need to link this file to your HTML :)
 
+
+// define facts for all animals
+const animalDescription = {
+	giraffe: ["The tallest animals on Earth",
+		"Long neck reaching up to 18 feet",
+		"Habits in savannas"
+	],
+	elephant: ["The largest land animal",
+		"Live in family groups led by a female",
+		"Huge ears, long tusks, and a powerful trunk"
+	],
+	panda: ["The tallest animals on Earth",
+		"Long neck reaching up to 18 feet",
+		"Habits in savannas"
+	],
+	kangaroo: ["Mom kangaroos have a pouch for baby kangaroos",
+		"They move by hopping on strong back legs",
+		"Use their long tails to keep balance"
+	],
+	bear: ["Typically black fur, but can vary to brown or blonde",
+		"weigh between 100-600 pounds",
+		"can live up to 20 years in the wild"
+	],
+	alligator: ["Powerful bite with sharp teeth; strong for capturing prey",
+		"Excellent swimmers, use their tails for propulsion",
+		"Good night vision and sensitive to vibrations"
+	]
+}
+
+//define messages for all animals
+
+
 // definfe variables for the chat
 let aniProfile1 = document.querySelector("ani-profile1");
 let greeting = document.querySelector(".hello");
