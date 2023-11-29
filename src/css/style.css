@@ -117,6 +117,10 @@ body {
 	text-align: center;
 }
 
+.choose-avatar {
+	text-align: center;
+}
+
 /* avatar page */
 
 .select-avatar p {
@@ -149,13 +153,25 @@ body {
 
 /* name card page */
 
+.home-button {
+	color: black;
+	padding: 15px 25px;
+	margin-top: 20px;
+	margin-left: 20px;
+	background-color: #FFD700;
+	border: none;
+	position: relative;
+	border-radius: 15px;
+	width: fit-content;
+}
+
 .name-card-container {
 	background-color: white;
 	border-radius: 15px;
 	height: 180px;
 	width: 90%;
 	margin-left: 20px;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 .name {
@@ -173,59 +189,115 @@ body {
 	margin-top: -125px;
 }
 
-.sayHiButton {
+.say-hi-button {
 	padding: 15px 25px;
+	text-decoration: none;
 	margin-top: 20px;
 	margin-left: 20px;
 	background-color: #FFD700;
-	border: none;
+	color: black;
+	width: fit-content;
 	position: relative;
 	border-radius: 15px;
 }
 
-.sayHiButton::before {
+.say-hi-button::before {
 	content: '';
 	position: absolute;
 }
 
 /* chat screen page */
 
+.back-buttom {
+	padding: 15px 25px;
+	margin-top: 20px;
+	margin-left: 20px;
+	background-color: #FFD700;
+	border: none;
+	color: black;
+	position: relative;
+	border-radius: 15px;
+	width: fit-content;
+
+}
+
 .user-selection-chat {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: space-between;
 	height: 100px;
 	text-align: center;
 	align-items: stretch;
 	margin: 30px;
+
 	/* ChatGPT: make the three prompts the same length and width */
 }
 
-
-.animal-talk {
-	background-color: lightblue;
-	margin: -1px;
+.animal-name {
+	padding-top: 10px;
+	padding-left: 40px;
+	text-align: center;
 }
 
-.promptWhere {
+.header {
+	display: flex;
+	flex-direction: row;
+}
+
+.chat-container {
+	background-color: white;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.avatar-message {
+	display: flex;
+}
+
+.ani-profile1 {
+	align-self: center;
+}
+
+.hello {
+	background-color: #343A40;
+	color: white;
+	padding: 10px;
+	width: fit-content;
+	margin-left: 10px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+
+.user-where {
+	margin-left: auto;
+	margin-right: 10px;
+	background-color: #343A40;
+	color: white;
+	padding: 10px;
+	width: fit-content;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+.prompt-where {
 	padding: 15px 25px;
 	background-color: #FFD700;
-	border: none;
+	border-radius: 5px;
 	position: relative;
 }
 
-.promptFood {
+.prompt-food {
 	padding: 15px 25px;
 	background-color: #FFD700;
-	border: none;
+	border-radius: 5px;
 	position: relative;
 }
 
-.promptSound {
+.prompt-sound {
 	padding: 15px 25px;
 	background-color: #FFD700;
-	border: none;
+	border-radius: 5px;
 	position: relative;
 }
 
@@ -247,9 +319,14 @@ h1 {
 }
 
 /* This uses the same value as --size-xs. */
+
+/* put media queries code for iPad down here */
 @media screen and (width >=320px) {
 	.content-container {
 		margin: 0 auto;
 		max-width: 768px;
 	}
 }
+
+
+/* put media queries code for Macbook down here */
