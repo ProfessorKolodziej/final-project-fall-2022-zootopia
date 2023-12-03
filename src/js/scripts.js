@@ -5,51 +5,109 @@
 
 // define facts for all animals
 const animalDescription = {
-	giraffe: ["The tallest animals on Earth",
-		"Long neck reaching up to 18 feet",
-		"Habits in savannas"
-	],
-	elephant: ["The largest land animal",
-		"Live in family groups led by a female",
-		"Huge ears, long tusks, and a powerful trunk"
-	],
-	panda: ["The tallest animals on Earth",
-		"Long neck reaching up to 18 feet",
-		"Habits in savannas"
-	],
-	kangaroo: ["Mom kangaroos have a pouch for baby kangaroos",
-		"They move by hopping on strong back legs",
-		"Use their long tails to keep balance"
-	],
-	bear: ["Typically black fur, but can vary to brown or blonde",
-		"weigh between 100-600 pounds",
-		"can live up to 20 years in the wild"
-	],
-	alligator: ["Powerful bite with sharp teeth; strong for capturing prey",
-		"Excellent swimmers, use their tails for propulsion",
-		"Good night vision and sensitive to vibrations"
-	]
-}
+	giraffe: {
+		name: "Giraffe",
+		facts: ["The tallest animals on Earth", "Long neck reaching up to 18 feet", "Habits in savannas"],
+		// image: "images/cartoon-giraffe.jpg"
+	},
+	elephant: {
+		name: "Elephant",
+		facts: ["The largest land animal",
+			"Live in family groups led by a female",
+			"Huge ears, long tusks, and a powerful trunk"
+		],
+		// image: "images/cartoon-elephant.jpg"
+	},
+	panda: {
+		name: "Panda",
+		facts: ["I am black and white",
+			"Sleep a lot due to their low-nutrition diet",
+			"Despite their size, pandas are gentle and not aggressive"
+		],
+		// image: "images/cartoon-panda.jpg"
+	},
+	kangaroo: {
+		name: "Kangaroo",
+		facts: ["Mom kangaroos have a pouch for baby kangaroos",
+			"They move by hopping on strong back legs",
+			"Use their long tails to keep balance"
+		],
+		// image: "images/cartoon-kangaroo.jpg"
+	},
+	bear: {
+		name: "Bear",
+		facts: ["Typically black fur, but can vary to brown or blonde",
+			"weigh between 100-600 pounds",
+			"can live up to 20 years in the wild"
+		],
+		// image: "images/cartoon-bear.jpg"
+	},
+	alligator: {
+		name: "Alligator",
+		facts: ["Powerful bite with sharp teeth; strong for capturing prey",
+			"Excellent swimmers, use their tails for propulsion",
+			"Good night vision and sensitive to vibrations"
+		],
+		// image: "images/cartoon-alligator.jpg"
+	}
+};
 
-//define messages for all animals
+// dynamic display of animal name and facts
 
+// create variables
+let bearButton = document.querySelector(".lil-bear");
+let giraffeButton = document.querySelector(".lil-giraffe");
+let elephantButton = document.querySelector(".lil-elephant");
+let alligatorButton = document.querySelector(".lil-alligator");
+let kangarooButton = document.querySelector(".lil-kangaroo");
+let pandaButton = document.querySelector(".lil-panda");
+let animalName = document.querySelector(".name");
+let animalFacts = document.querySelector(".facts");
+let sayHi = document.querySelector(".say-hi-button");
+// let animalImage = document.querySelector(".animal-image");
 
-// definfe variables for the chat
-let aniProfile1 = document.querySelector("ani-profile1");
-let greeting = document.querySelector(".hello");
-let questionWhere = document.querySelector(".where")
-let aniProfile2 = document.querySelector("ani-profile2");
-let answerWhere = document.querySelector(".answer-where");
-let questionFood = document.querySelector(".question-food");
-let aniProfile3 = document.querySelector("ani-profile3");
-let answerFood = document.querySelector(".answer-food");
-let questionSound = document.querySelector(".question-sound");
-let aniProfile4 = document.querySelector("ani-profile4");
-let answerSound = document.querySelector(".answer-sound");
+// function for displaying animal name card
+function displayBearInfo() {
+	animalName.innerText = animalDescription.bear.name;
+	animalFacts.innerText = animalDescription.bear.facts;
+	sayHi.innerText = "Say Hi to " + animalDescription.bear.name + "!";
+};
+// animalImage.src = animalDescription.bear.image;
+function displayPandaInfo() {
+	animalName.innerText = animalDescription.panda.name;
+	animalFacts.innerText = animalDescription.panda.facts;
+	sayHi.innerText = "Say Hi to " + animalDescription.panda.name + "!";
+	// animalImage.src = animalDescription.panda.image;
+};
+function displayAlligatorInfo() {
+	animalName.innerText = animalDescription.alligator.name;
+	animalFacts.innerText = animalDescription.alligator.facts;
+	sayHi.innerText = "Say Hi to " + animalDescription.alligator.name + "!";
+	// animalImage.src = animalDescription.alligator.image;
+};
+function displayKangarooInfo() {
+	animalName.innerText = animalDescription.kangaroo.name;
+	animalFacts.innerText = animalDescription.kangaroo.facts;
+	sayHi.innerText = "Say Hi to " + animalDescription.kangaroo.name + "!";
+	// animalImage.src = animalDescription.kangaroo.image;
+};
+function displayGiraffeInfo() {
+	animalName.innerText = animalDescription.giraffe.name;
+	animalFacts.innerText = animalDescription.giraffe.facts;
+	sayHi.innerText = "Say Hi to " + animalDescription.giraffe.name + "!";
+	// animalImage.src = animalDescription.giraffe.image;
+};
+function displayElephantInfo() {
+	animalName.innerText = animalDescription.elephant.name;
+	animalFacts.innerText = animalDescription.elephant.facts;
+	sayHi.innerText = "Say Hi to " + animalDescription.elephant.name + "!";
+	// animalImage.src = animalDescription.elephant.image;
+};
 
-// define variables for the prompts
-let prompt1 = document.querySelector(".prompt-where");
-let prompt2 = document.querySelector(".prompt-food");
-let prompt3 = document.querySelector(".prompt-sound");
-
-// define functions
+// add eventListeners to images of animals
+alligatorButton.addEventListener("click", displayAlligatorInfo);
+pandaButton.addEventListener("click", displayPandaInfo);
+bearButton.addEventListener("click", displayBearInfo);
+kangarooButton.addEventListener("click", displayKangarooInfo);
+giraffeButton.addEventListener("click", displayGiraffeInfo);
+elephantButton.addEventListener("click", displayElephantInfo);
