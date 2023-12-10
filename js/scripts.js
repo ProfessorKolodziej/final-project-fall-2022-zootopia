@@ -8,7 +8,8 @@ const animalDescription = {
 	giraffe: {
 		name: "Giraffe",
 		facts: ["The tallest animals on Earth", "Long neck reaching up to 18 feet", "Habits in savannas"],
-		// image: "images/cartoon-giraffe.jpg"
+		image: "./images/giraffe-cartoon.png",
+		class: "giraffe",
 	},
 	elephant: {
 		name: "Elephant",
@@ -16,7 +17,8 @@ const animalDescription = {
 			"Live in family groups led by a female",
 			"Huge ears, long tusks, and a powerful trunk"
 		],
-		// image: "images/cartoon-elephant.jpg"
+		image: "./images/elephant-cartoon.png",
+		class: "elephant",
 	},
 	panda: {
 		name: "Panda",
@@ -24,7 +26,8 @@ const animalDescription = {
 			"Sleep a lot due to their low-nutrition diet",
 			"Despite their size, pandas are gentle and not aggressive"
 		],
-		// image: "images/cartoon-panda.jpg"
+		image: "./images/panda-cartoon.png",
+		class: "panda",
 	},
 	kangaroo: {
 		name: "Kangaroo",
@@ -32,7 +35,8 @@ const animalDescription = {
 			"They move by hopping on strong back legs",
 			"Use their long tails to keep balance"
 		],
-		// image: "images/cartoon-kangaroo.jpg"
+		image: "./images/kangaroo-cartoon.png",
+		class: "kangaroo",
 	},
 	bear: {
 		name: "Bear",
@@ -40,7 +44,8 @@ const animalDescription = {
 			"weigh between 100-600 pounds",
 			"can live up to 20 years in the wild"
 		],
-		// image: "images/cartoon-bear.jpg"
+		image: "./images/bear-cartoon.png",
+		class: "bear",
 	},
 	alligator: {
 		name: "Alligator",
@@ -48,66 +53,223 @@ const animalDescription = {
 			"Excellent swimmers, use their tails for propulsion",
 			"Good night vision and sensitive to vibrations"
 		],
-		// image: "images/cartoon-alligator.jpg"
+		image: "./images/alligator-cartoon.png",
+		class: "alligator",
 	}
 };
-
+const animalAnswerList = {
+	'kangaroo': {
+		avatar: './images/real-kangaroo.png',
+		where: `I live in the African savannas and grasslands. These vast open spaces with plenty
+		of
+		trees and bushes
+		provide the perfect habitat for giraffes like me.`,
+		food: `I love munching on acacia leaves! They're tough for others to reach, but for me,
+		with
+		my
+		long neck that
+		can
+		stretch up to 18 feet, it's like picking apples from a tree. Delicious and always a bit out of reach
+		for
+		the
+		rest of the savanna crowd.`,
+		sound: `...`,
+	},
+	'giraffe': {
+		avatar: './images/giraffe-avatar.png',
+		where: `I live in the African savannas and grasslands. These vast open spaces with plenty
+		of
+		trees and bushes
+		provide the perfect habitat for giraffes like me.`,
+		food: `I love munching on acacia leaves! They're tough for others to reach, but for me,
+		with
+		my
+		long neck that
+		can
+		stretch up to 18 feet, it's like picking apples from a tree. Delicious and always a bit out of reach
+		for
+		the
+		rest of the savanna crowd.`,
+		sound: `...`,
+	},
+	'elephant': {
+		avatar: './images/real-elephant.png',
+		where: `I live in the African savannas and grasslands. These vast open spaces with plenty
+		of
+		trees and bushes
+		provide the perfect habitat for giraffes like me.`,
+		food: `I love munching on acacia leaves! They're tough for others to reach, but for me,
+		with
+		my
+		long neck that
+		can
+		stretch up to 18 feet, it's like picking apples from a tree. Delicious and always a bit out of reach
+		for
+		the
+		rest of the savanna crowd.`,
+		sound: `...`,
+	},
+	'panda': {
+		avatar: './images/real-panda.png',
+		where: `I live in the African savannas and grasslands. These vast open spaces with plenty
+		of
+		trees and bushes
+		provide the perfect habitat for giraffes like me.`,
+		food: `I love munching on acacia leaves! They're tough for others to reach, but for me,
+		with
+		my
+		long neck that
+		can
+		stretch up to 18 feet, it's like picking apples from a tree. Delicious and always a bit out of reach
+		for
+		the
+		rest of the savanna crowd.`,
+		sound: `...`,
+	},
+	'alligator': {
+		avatar: './images/real-alligator.png',
+		where: `I live in the African savannas and grasslands. These vast open spaces with plenty
+		of
+		trees and bushes
+		provide the perfect habitat for giraffes like me.`,
+		food: `I love munching on acacia leaves! They're tough for others to reach, but for me,
+		with
+		my
+		long neck that
+		can
+		stretch up to 18 feet, it's like picking apples from a tree. Delicious and always a bit out of reach
+		for
+		the
+		rest of the savanna crowd.`,
+		sound: `...`,
+	},
+	'bear': {
+		avatar: './images/real-bear.png',
+		where: `I live in the African savannas and grasslands. These vast open spaces with plenty
+		of
+		trees and bushes
+		provide the perfect habitat for giraffes like me.`,
+		food: `I love munching on acacia leaves! They're tough for others to reach, but for me,
+		with
+		my
+		long neck that
+		can
+		stretch up to 18 feet, it's like picking apples from a tree. Delicious and always a bit out of reach
+		for
+		the
+		rest of the savanna crowd.`,
+		sound: `...`,
+	},
+}
 // dynamic display of animal name and facts
-
 // create variables
-let bearButton = document.querySelector(".lil-bear");
-let giraffeButton = document.querySelector(".lil-giraffe");
-let elephantButton = document.querySelector(".lil-elephant");
-let alligatorButton = document.querySelector(".lil-alligator");
-let kangarooButton = document.querySelector(".lil-kangaroo");
-let pandaButton = document.querySelector(".lil-panda");
-let animalName = document.querySelector(".name");
-let animalFacts = document.querySelector(".facts");
-let sayHi = document.querySelector(".say-hi-button");
-// let animalImage = document.querySelector(".animal-image");
+let clickType = '';
+let ishasType = [];
+let element1 = document.getElementById("section3"); // chat-screen
+let element2 = document.getElementById("section1"); // home-screen
+let element3 = document.getElementById("section2"); // name-card-screen
+let buttons = document.getElementsByClassName("des_action");
+let animalImg = document.getElementById('animal-img');
+let questionBtn = document.getElementsByClassName("questionAction");
+let chatContainerElement = document.querySelector('.animal-talk');
 
-// function for displaying animal name card
-function displayBearInfo() {
-	animalName.innerText = animalDescription.bear.name;
-	animalFacts.innerText = animalDescription.bear.facts;
-	sayHi.innerText = "Say Hi to " + animalDescription.bear.name + "!";
-};
-// animalImage.src = animalDescription.bear.image;
-function displayPandaInfo() {
-	animalName.innerText = animalDescription.panda.name;
-	animalFacts.innerText = animalDescription.panda.facts;
-	sayHi.innerText = "Say Hi to " + animalDescription.panda.name + "!";
-	// animalImage.src = animalDescription.panda.image;
-};
-function displayAlligatorInfo() {
-	animalName.innerText = animalDescription.alligator.name;
-	animalFacts.innerText = animalDescription.alligator.facts;
-	sayHi.innerText = "Say Hi to " + animalDescription.alligator.name + "!";
-	// animalImage.src = animalDescription.alligator.image;
-};
-function displayKangarooInfo() {
-	animalName.innerText = animalDescription.kangaroo.name;
-	animalFacts.innerText = animalDescription.kangaroo.facts;
-	sayHi.innerText = "Say Hi to " + animalDescription.kangaroo.name + "!";
-	// animalImage.src = animalDescription.kangaroo.image;
-};
-function displayGiraffeInfo() {
-	animalName.innerText = animalDescription.giraffe.name;
-	animalFacts.innerText = animalDescription.giraffe.facts;
-	sayHi.innerText = "Say Hi to " + animalDescription.giraffe.name + "!";
-	// animalImage.src = animalDescription.giraffe.image;
-};
-function displayElephantInfo() {
-	animalName.innerText = animalDescription.elephant.name;
-	animalFacts.innerText = animalDescription.elephant.facts;
-	sayHi.innerText = "Say Hi to " + animalDescription.elephant.name + "!";
-	// animalImage.src = animalDescription.elephant.image;
-};
+// back
+document.getElementById("myButton").addEventListener("click", function () {
+	element1.classList.toggle("hide");
+	element2.classList.toggle("hide");
+	handleClear();
+});
+document.getElementById("home_btn").addEventListener("click", function () {
+	element3.classList.toggle("hide");
+	element2.classList.toggle("hide");
+});
+document.getElementById("say_hi_btn").addEventListener("click", function () {
+	element3.classList.toggle("hide");
+	element1.classList.toggle("hide");
+	handleGenerateDom(`Hello there! I'm a ${clickType}`)
+});
 
-// add eventListeners to images of animals
-alligatorButton.addEventListener("click", displayAlligatorInfo);
-pandaButton.addEventListener("click", displayPandaInfo);
-bearButton.addEventListener("click", displayBearInfo);
-kangarooButton.addEventListener("click", displayKangarooInfo);
-giraffeButton.addEventListener("click", displayGiraffeInfo);
-elephantButton.addEventListener("click", displayElephantInfo);
+//des_action
+function handlerDesAction(e) {
+	clickType = this.getAttribute("data-animal");
+	animalImg.setAttribute("src", animalDescription[clickType].image);
+	animalImg.classList.remove(...animalImg.classList);
+	animalImg.classList.add("animal-img", animalDescription[clickType].class);
+	element2.classList.toggle("hide");
+	element3.classList.toggle("hide");
+}
+
+for (let i = 0; i < buttons.length; i++) {
+	buttons[i].addEventListener("click", handlerDesAction);
+}
+
+function handlerQuertion(e) {
+	let type = this.getAttribute("data-type");
+	let content = this.innerText;
+	if (!ishasType.includes(type)) {
+		handlerGenerateQuerstionDom(content);
+		let contents = animalAnswerList[clickType];
+		handleGenerateDom(contents[type]);
+		if (this) {
+			this.style.backgroundColor = '#abb5be';
+		}
+		ishasType.push(type);
+	}
+}
+
+//question_action
+
+for (let i = 0; i < questionBtn.length; i++) {
+	questionBtn[i].addEventListener("click", handlerQuertion);
+}
+
+//querstion Dom
+function handlerGenerateQuerstionDom(content) {
+	let querstionTextElement = document.createElement('p');
+	querstionTextElement.classList.add('user-where');
+	querstionTextElement.textContent = content;
+	let chatContainerElement = document.querySelector('.animal-talk');
+	chatContainerElement.appendChild(querstionTextElement);
+	scrollToBottom('.chat-list')
+}
+
+//generate chatDom
+function handleGenerateDom(content) {
+	let answerElement = document.createElement('section');
+	answerElement.classList.add('avatar-message');
+	let avatarElement = document.createElement('img');
+	avatarElement.src = `${animalAnswerList[clickType].avatar}`;
+	avatarElement.classList.add('ani-profile1');
+	let answerTextElement = document.createElement('p');
+	answerTextElement.classList.add('hello');
+	answerTextElement.textContent = content;
+	let chatContainerElement = document.querySelector('.animal-talk');
+	answerElement.appendChild(avatarElement);
+	answerElement.appendChild(answerTextElement);
+	chatContainerElement.appendChild(answerElement);
+	scrollToBottom('.chat-list')
+}
+
+function scrollToBottom(elementSelector) {
+	let element = document.querySelector(elementSelector);
+	if (element) {
+		if (element.scrollHeight - element.scrollTop !== element.clientHeight) {
+			element.scrollTop = element.scrollHeight - element.clientHeight;
+		}
+	}
+}
+
+//celar
+function handleClear() {
+	if (chatContainerElement) {
+		while (chatContainerElement.firstChild) {
+			chatContainerElement.removeChild(chatContainerElement.firstChild);
+		}
+	}
+	for (let i = 0; i < questionBtn.length; i++) {
+		if (questionBtn[i]) {
+			questionBtn[i].style.backgroundColor = '#FFD700';
+		}
+	}
+	ishasType = [];
+}

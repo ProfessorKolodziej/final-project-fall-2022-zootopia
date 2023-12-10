@@ -6,98 +6,89 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Update your description here" />
-	<!-- google font links -->
+	<!-- google font link -->
 	<title>Animap</title>
 	<!-- link to css -->
-	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/initialize.css">
+	<link rel="stylesheet" href="./css/home.css">
 </head>
 
 <body>
-	<!-- home screen -->
-	<h1 class="home-title">Animap</h1>
-	<main class="map-container">
-		<img src="images/map.jpeg" class="map">
-		<img src="images/lil-bear.png" class="lil-bear">
-		<img src="images/lil-crocodile.png" class="lil-alligator">
-		<img src="images/lil-elephant.png" class="lil-elephant">
-		<img src="images/lil-giraffe.png" class="lil-giraffe">
-		<img src="images/lil-panda.png" class="lil-panda">
-		<img src="images/lil-kangaroo.png" class="lil-kangaroo">
-		<p class="namerica">North America</p>
-		<p class="samerica">South America</p>
-		<p class="africa">Africa</p>
-		<p class="euroasia">Euraisa</p>
-		<p class="oceania">Oceania</p>
-	</main>
-	<h4 class="click-prompt">Click an animal to<br>learn more about it</h4>
+	<article class="home-content bc" id="section1">
+		<div class="home-main">
+			<!-- home screen -->
+			<h1 class="home-title">Animap</h1>
+			<div class="map-container">
+				<img src="images/map.jpeg" class="map">
+				<img src="images/lil-bear.png" class="lil-bear des_action" data-animal="bear">
+				<img src="images/lil-crocodile.png" class="lil-alligator des_action" data-animal="alligator">
+				<img src="images/lil-elephant.png" class="lil-elephant des_action" data-animal="elephant">
+				<img src="images/lil-giraffe.png" class="lil-giraffe des_action" data-animal="giraffe">
+				<img src="images/lil-panda.png" class="lil-panda des_action" data-animal="panda">
+				<img src="images/lil-kangaroo.png" class="lil-kangaroo des_action" data-animal="kangaroo">
+				<p class="namerica">North America</p>
+				<p class="samerica">South America</p>
+				<p class="africa">Africa</p>
+				<p class="euroasia">Euraisa</p>
+				<p class="oceania">Oceania</p>
+			</div>
+			<div class="click-prompt_content">
+				<h4 class="click-prompt">Click an animal to<br>learn more about it</h4>
+			</div>
 
-	<!-- <img src="images/kids.png" alt="kids" class="kids"> -->
+			<div class="kids-content">
+				<img src="images/kids.png" alt="kids" class="kids">
+			</div>
+		</div>
+	</article>
+
 
 	<!-- name card section -->
+	<article class="name-card hide bc" id="section2">
+		<!-- home button -->
+		<header class="name-header">
+			<span class="home-button" id="home_btn">Home</span>
+		</header>
+		<!-- name card -->
+		<section class="name-card-container ">
+			<h2 class="name">Giraffe</h2>
+			<ul class="facts">
+				<li>The tallest animals on Earth</li>
+				<li>Long neck reaching up to 18 feet</li>
+				<li>Habits in savanna</li>
+			</ul>
+		</section>
+		<div class="say-hi-content">
+			<!-- say hi button -->
+			<button type="button" class="say-hi-button" id="say_hi_btn">Say Hi to Giraffe!</button>
 
-	<!-- name card -->
-	<section class="name-card-container">
-		<h2 class="name">Giraffe</h2>
-		<ul class="facts">
-			<li>The tallest animals on Earth</li>
-			<li>Long neck reaching up to 18 feet</li>
-			<li>Habits in savanna</li>
-		</ul>
-	</section>
+			<!-- animal cartoon picture -->
+			<img src="images/giraffe-cartoon.png" class="animal-img" id="animal-img">
+		</div>
 
-	<!-- say hi button -->
-	<button type="button" class="say-hi-button">Say Hi to Giraffe!</button>
 
-	<!-- animal cartoon picture -->
-	<img src="images/giraffe-cartoon.png" class="animal-img">
-
-	<!-- home button -->
-	<a href="index.html">
-		<p class="home-button">Home</p>
-	</a>
+	</article>
 
 	<!-- chat screen -->
-	<section class="header">
-		<a href="index.html">
-			<p class="back-buttom">Back</p>
-		</a>
-		<h2 class="animal-name">Giraffe</h2>
-	</section>
-	<section class="chat-room-container">
-		<section class="chat-container">
-			<section class="animal-talk">
-				<section class="avatar-message">
-					<img src="/images/giraffe-avatar.png" class="ani-profile1">
-					<p class="hello">Hello there! I'm a giraffe.</p>
+	<article class="chat-content hide" id="section3">
+		<header class="bc name-header">
+			<span class="home-button" id="myButton">Back</span>
+		</header>
+		<div class="chat-list">
+			<section class="chat-container">
+				<section class="animal-talk">
 				</section>
-				<p class="user-where">Where are you from?</p>
-				<img src="/images/giraffe-avatar.png" class="ani-profile2">
-				<p class="answer-where">I live in the African savannas and grasslands. These vast open spaces with plenty
-					of
-					trees and bushes
-					provide the perfect habitat for giraffes like me.</p>
-				<p class="question-food">What is your favorite food?</p>
-				<img src="/images/giraffe-avatar.png" class="ani-profile3">
-				<p class="answer-food">I love munching on acacia leaves! They're tough for others to reach, but for me,
-					with
-					my
-					long neck that
-					can
-					stretch up to 18 feet, it's like picking apples from a tree. Delicious and always a bit out of reach
-					for
-					the
-					rest of the savanna crowd.</p>
-				<p class="question-sound">What do you sound like?</p>
-				<img src="/images/giraffe-avatar.png" class="ani-profile4">
-				<p class="answer-sound">...</p>
 			</section>
+		</div>
+		<footer class="default-list">
 			<section class="user-selection-chat">
-				<p class="prompt-where">Where are your from?</p>
-				<p class="prompt-food">What is your favorite food?</p>
-				<p class="prompt-sound">What do you sound like?</p>
+				<p class="prompt-where questionAction" data-type="where">Where are your from?</p>
+				<p class="prompt-food questionAction" data-type="food">What is your favorite food?</p>
+				<p class="prompt-sound questionAction" data-type="sound">What do you sound like?</p>
 			</section>
-		</section>
-	</section>
+		</footer>
+	</article>
 
 	<!--
 		This is where you should link your JS file.
