@@ -68,7 +68,8 @@ table {
 
 /* landing page */
 .home-title {
-	color: black;
+	color: #343A40;
+	font-family: 'Lilita One', sans-serif;
 	text-align: center;
 	font-size: 36px;
 	font-style: normal;
@@ -183,6 +184,9 @@ table {
 
 .click-prompt-content {
 	margin-top: 15px;
+	color: #343A40;
+	font-family: 'Playpen Sans', sans-serif;
+	font-weight: 200;
 }
 
 .click-prompt {
@@ -201,6 +205,7 @@ table {
 	color: black;
 	padding: 12px 24px;
 	margin: 15px;
+	font-family: Inter, sans-serif;
 	background-color: #FFD700;
 	border: none;
 	position: relative;
@@ -225,12 +230,15 @@ table {
 }
 
 .name {
+	font-size: 30px;
 	padding: 8px 24px 0;
+	font-family: Inter, sans-serif;
 }
 
 .facts {
 	line-height: 36px;
 	padding: 0 24px;
+	font-family: Inter, sans-serif;
 }
 
 .animal-img {
@@ -242,6 +250,7 @@ table {
 .say-hi-button {
 	padding: 15px 25px;
 	text-decoration: none;
+	font-family: Inter, sans-serif;
 	margin-top: 20px;
 	margin-left: 20px;
 	background-color: #FFD700;
@@ -281,8 +290,14 @@ table {
 	margin: 12px;
 }
 
+.animal-talk {
+	font-family: Inter, sans-serif;
+	line-height: 30px;
+}
+
 .user-selection-chat p {
 	margin: 12px 0;
+	font-family: Inter, sans-serif;
 }
 
 .animal-name {
@@ -527,19 +542,23 @@ to help you out.
 	}
 
 	.namerica {
-		font-size: 1rem;
+		font-size: 2rem;
 	}
 
 	.samerica {
-		font-size: 1rem;
+		font-size: 2rem;
 	}
 
 	.africa {
-		font-size: 1rem;
+		font-size: 2rem;
 	}
 
 	.euroasia {
-		font-size: 1rem;
+		font-size: 2rem;
+	}
+
+	.oceania {
+		font-size: 2rem;
 	}
 
 	.lil-kangaroo {
@@ -564,5 +583,29 @@ to help you out.
 
 	.lil-bear {
 		width: 80px;
+	}
+
+	.click-prompt {
+		font-size: 45px;
+	}
+
+	.home-title {
+		font-size: 55px;
+		padding-top: 20px;
+	}
+
+	.animal-img {
+		width: 30%;
+		padding-left: 10px;
+		margin-left: 700px;
+		margin-top: -125px;
+	}
+
+	.animal-talk {
+		font-size: 20px;
+	}
+
+	.facts {
+		font-size: 20px;
 	}
 }
