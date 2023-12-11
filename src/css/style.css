@@ -5,7 +5,62 @@ Try changing the color from blue to red in the
 primary color variable below.
 */
 
-body {}
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+html {
+	font-size: 16px;
+	height: 100%;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.5;
+	height: 100%;
+}
+
+h1 {
+	font-size: 2em;
+	color: var(--color-primary);
+}
+
+p {
+	font-size: 1em;
+}
+
+a {
+	font-size: 0.8em;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 .bc {
 	background-color: #43D6DD;
@@ -126,7 +181,7 @@ body {}
 	font-weight: bold;
 }
 
-.click-prompt_content {
+.click-prompt-content {
 	margin-top: 15px;
 }
 
@@ -140,7 +195,7 @@ body {}
 	object-fit: contain;
 }
 
-/* name card page */
+/* name-card page */
 
 .home-button {
 	color: black;
@@ -342,67 +397,6 @@ to help you out.
 	--size-xl: 1200px;
 */
 
-h1 {
-	color: var(--color-primary);
-}
-
-/* Reset default styles */
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-}
-
-html {
-	font-size: 16px;
-	height: 100%;
-}
-
-body {
-	font-size: 1em;
-	line-height: 1.5;
-	height: 100%;
-}
-
-h1 {
-	font-size: 2em;
-}
-
-p {
-	font-size: 1em;
-}
-
-a {
-	font-size: 0.8em;
-}
-
-ol,
-ul {
-	list-style: none;
-}
-
-blockquote,
-q {
-	quotes: none;
-}
-
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-	content: "";
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 .home-main {
 	width: 100%;
 	height: 100vh;
@@ -524,7 +518,6 @@ table {
 }
 
 @media screen and (width >=1024px) {
-
 	.say-hi-button {
 		margin-left: 40px;
 	}
