@@ -202,7 +202,7 @@ table {
 /* name-card page */
 
 .home-button {
-	color: black;
+	color: #343A40;
 	padding: 12px 24px;
 	margin: 15px;
 	font-family: Inter, sans-serif;
@@ -254,7 +254,7 @@ table {
 	margin-top: 20px;
 	margin-left: 20px;
 	background-color: #FFD700;
-	color: black;
+	color: #343A40;
 	width: fit-content;
 	position: relative;
 	border-radius: 15px;
@@ -273,7 +273,7 @@ table {
 	margin-left: 20px;
 	background-color: #FFD700;
 	border: none;
-	color: black;
+	color: #343A40;
 	position: relative;
 	border-radius: 15px;
 	width: fit-content;
